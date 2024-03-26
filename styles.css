@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-height: 20%;
+    background-color: rgb(224, 130, 146);
+}
+
+nav #logo{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 0 0 20px;
+}
+
+
+#logo img{
+    height: 100%;
+}
+
+nav #connect-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 40px 0 0;
+}
+
+#connect-section #connectBtn{
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 231, 235);
+    color: black;
+    border-radius: 10px;
+}
+
+button#connectBtn:hover{
+    cursor: pointer;
+}
+
+main{
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #main-container{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-top{
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(228, 161, 183);
+    color: white;
+}
+
+.main-top .welcome-section{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+.main-top .timer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-top .timer-section #getTimer{
+    padding: 10px 20px;
+    margin: 0 20px;
+}
+
+.main-top .balance-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px 0 0;
+}
+
+.main-top .balance-section #getBalance{
+    padding: 10px 10px;
+    margin: 0 5px;
+}
+
+.main-mid{
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    background-color: rgb(228, 161, 183);
+}
+
+.main-mid .timer-section{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 238, 253);
+}
+
+#setTimer{
+    padding: 2px 10px;
+    margin: 5px 0;
+}
+
+.timer-section label{
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+.timer-section input{
+    padding: 5px 10px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid rgb(255, 152, 152);
+    border-radius: 10px;
+}
+
+.main-mid .input-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35%;
+    width: 50%;
+    background-color: rgb(253, 238, 253);
+}
+
+.input-section label{
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+.input-section input{
+    padding: 5px 10px;
+    width: 50%;
+    text-align: center;
+    border: 1px solid rgb(255, 152, 152);
+    border-radius: 10px;
+}
+
+.main-bottom{
+    height: 20%;
+    background-color: rgb(228, 161, 183);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-bottom .withdraw-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.withdraw-section button{
+    padding: 30px 70px;
+    background-color: pink;
+    font-size: 20px;
+    color: rgb(212, 97, 97);
+    border: none;
+
+}
+
+.main-bottom .deposit-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deposit-section button{
+    padding: 30px 70px;
+    background-color: rgb(165, 255, 165);
+    font-size: 20px;
+    color: rgb(71, 177, 71);
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}

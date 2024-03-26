@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./styles.css"/>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="./assets/pig.png" alt="">
+        </div>
+        <div id="connect-section">
+            <button id = "connectBtn">Connect</button>
+        </div>
+    </nav>
+
+    <main>
+        <div id="main-container">
+            <div class="main-top">
+                <div class="welcome-section">
+                    <h2>Hello, User!!</h2>
+                </div>
+                <div class="timer-section">
+                    <h3>Timer: <span id = "time">0</span>s</h3>
+                    <button id = "getTimer">Get Timer</button>
+                </div>
+                <div class="balance-section">
+                    <h3>Balance: <span id = "balance">0</span>ETH</h3>
+                    <button id = "getBalance">Get Balance</button>
+                </div>
+            </div>
+            <div class="main-mid">
+                <div class="timer-section">
+                    <label for="timer">Set Timer</label>
+                    <input type="text" inputmode="numeric" id = "timer" placeholder="Enter Year"/>
+                    <button id = "setTimer">Set</button>
+                </div>
+                <div class="input-section">
+                    <label for="amount">Deposit Amount</label>
+                    <input type="text" inputmode="numeric" id = "amount" placeholder="Enter Saving ETH"/>
+                </div>
+            </div>
+            <div class="main-bottom">
+                <div class="withdraw-section">
+                    <button id = "withdrawBtn">Withdraw</button>
+                </div>
+                <div class="deposit-section">
+                    <button id = "depositBtn">Deposit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
